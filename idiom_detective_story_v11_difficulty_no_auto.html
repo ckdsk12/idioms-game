@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>관용표현 추리 사건 V11 — 사라진 축제 영상</title>
+<style>
+:root{
+  --bg:#071522; --bg2:#0b1d30; --panel:#102237; --panel2:#132b43;
+  --line:#29415a; --line2:#415a77; --text:#eaf2ff; --muted:#93a4b9;
+  --gold:#f5b532; --gold2:#ffd76a; --green:#31d17c; --red:#ff5f65;
+  --blue:#82cfff; --purple:#b79cff; --shadow:0 18px 60px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box} body{margin:0;background:
+  linear-gradient(rgba(255,255,255,.018) 1px,transparent 1px),
+  linear-gradient(90deg,rgba(255,255,255,.018) 1px,transparent 1px),
+  radial-gradient(circle at 10% 0%,rgba(58,108,161,.28),transparent 38%),
+  radial-gradient(circle at 90% 10%,rgba(80,54,135,.22),transparent 34%),
+  var(--bg); background-size:40px 40px,40px 40px,auto,auto,auto;
+  color:var(--text); font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;
+}
+button,input,select{font-family:inherit} button{cursor:pointer}
+.wrap{width:min(940px,calc(100% - 36px));margin:0 auto;padding:26px 0 70px}.hide{display:none!important}
+.topbar{position:sticky;top:0;z-index:20;background:linear-gradient(180deg,rgba(7,21,34,.96),rgba(7,21,34,.82));backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.07)}
+.topinner{width:min(940px,calc(100% - 36px));margin:auto;display:flex;align-items:center;justify-content:space-between;padding:10px 0}.brand{font-weight:900;letter-spacing:.02em}.pill{display:inline-flex;gap:7px;align-items:center;border:1px solid var(--line);background:rgba(19,43,67,.7);color:var(--muted);border-radius:999px;padding:7px 12px;font-size:13px}.pill strong{color:var(--text)}
+.timer.danger{color:#ffd0d0;border-color:rgba(255,95,101,.5);background:rgba(255,95,101,.12)}.btn{border:0;border-radius:16px;background:var(--gold);color:#102033;font-weight:900;padding:15px 20px;box-shadow:0 8px 0 rgba(0,0,0,.16);transition:.15s}.btn:hover{transform:translateY(-1px)}.btn:active{transform:translateY(2px);box-shadow:none}.btn.secondary{background:#172f4a;color:var(--text);border:1px solid var(--line);box-shadow:none}.btn.ghost{background:transparent;color:var(--muted);border:1px solid var(--line);box-shadow:none}.btn.small{padding:9px 12px;border-radius:12px;font-size:13px}.btn.red{background:#ef6767;color:#fff}.btn.green{background:#35d184;color:#062014}.btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.hero{min-height:calc(100vh - 60px);display:grid;place-items:center;padding:42px 0}.hero-card{position:relative;overflow:hidden;width:min(920px,100%);border:1px solid rgba(255,213,106,.32);border-radius:30px;background:linear-gradient(145deg,rgba(19,43,67,.96),rgba(7,18,31,.98));box-shadow:var(--shadow);padding:34px}.hero-card:before{content:"";position:absolute;inset:-2px;background:radial-gradient(circle at 18% 10%,rgba(245,181,50,.18),transparent 34%),radial-gradient(circle at 80% 24%,rgba(130,207,255,.18),transparent 38%);pointer-events:none}.hero-content{position:relative;z-index:1}.label{display:inline-flex;gap:8px;align-items:center;color:var(--gold2);border:1px solid rgba(245,181,50,.4);background:rgba(245,181,50,.08);border-radius:999px;padding:7px 12px;font-weight:800;font-size:13px}.hero h1{font-size:clamp(32px,6vw,62px);line-height:1.05;margin:18px 0 14px;letter-spacing:-.05em}.hero p{color:#b9c8da;font-size:17px;line-height:1.9;margin:0}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:22px;margin-top:28px}.dossier{border:1px solid var(--line);background:rgba(10,27,45,.7);border-radius:22px;padding:20px}.dossier h3{margin:0 0 12px;font-size:18px}.file-list{display:grid;gap:10px}.file-item{display:flex;gap:12px;align-items:flex-start;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.035);border-radius:16px;padding:12px}.file-ico{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:rgba(245,181,50,.12);border:1px solid rgba(245,181,50,.3)}.file-item b{display:block}.file-item span{color:var(--muted);font-size:13px}.profile input{width:100%;border:1px solid var(--line);background:#0a1b2d;color:var(--text);border-radius:15px;padding:14px 15px;font-size:16px;outline:none}.badges{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}.badge-card{border:1px solid var(--line);border-radius:18px;padding:14px;text-align:center;background:#0c2035;transition:.15s}.badge-card.selected{border-color:var(--gold);box-shadow:0 0 0 3px rgba(245,181,50,.15);background:#182d3c}.badge-card .emoji{font-size:28px}.badge-card b{display:block;margin-top:5px}.mode-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.mode-card{border:1px solid var(--line);border-radius:18px;padding:14px;text-align:left;background:#0c2035;transition:.15s;color:var(--text)}.mode-card.selected{border-color:var(--gold);box-shadow:0 0 0 3px rgba(245,181,50,.15);background:#182d3c}.mode-card b{display:block}.mode-card span{display:block;color:var(--muted);font-size:12px;margin-top:4px;line-height:1.45}.notice{border-left:4px solid var(--gold);background:rgba(245,181,50,.08);border-radius:16px;padding:15px 16px;color:#d9e5f3;line-height:1.65}.screen{animation:fade .25s ease}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.headerline{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin:14px 0 18px}.eyebrow{color:var(--muted);font-size:13px;letter-spacing:.06em}.title{font-size:26px;font-weight:950;margin:3px 0 0;letter-spacing:-.04em}.progress{display:flex;gap:8px;align-items:center;justify-content:center;margin:14px 0 26px}.dot{width:9px;height:9px;border-radius:99px;background:#607086}.dot.on{background:var(--green)}.dot.now{background:var(--gold)}
+.panel{border:1px solid var(--line);background:rgba(16,34,55,.88);border-radius:24px;padding:24px;box-shadow:0 12px 40px rgba(0,0,0,.18)}.panel.gold{border-color:rgba(245,181,50,.42)}.panel + .panel{margin-top:18px}.section-title{font-size:19px;font-weight:950;margin:0 0 14px;display:flex;gap:10px;align-items:center}.story{font-size:17px;line-height:2;color:#dae5f2;white-space:pre-line}.story strong{color:#fff}.story em{color:var(--gold2);font-style:normal;font-weight:900}.dialogue{display:grid;gap:12px;margin-top:16px}.bubble{max-width:82%;border:1px solid rgba(255,255,255,.08);background:#102740;border-radius:20px;padding:12px 15px;line-height:1.65}.bubble.right{justify-self:end;background:#18314e}.speaker{display:block;color:var(--gold2);font-weight:900;font-size:13px;margin-bottom:3px}.chatbox{border:1px solid var(--line);background:#0b1d30;border-radius:22px;overflow:hidden}.chathead{display:flex;justify-content:space-between;color:var(--muted);background:rgba(255,255,255,.04);padding:12px 16px;border-bottom:1px solid rgba(255,255,255,.07)}.messages{padding:16px;display:grid;gap:10px}.msg{display:flex;gap:10px;align-items:flex-start}.avatar{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#193a5b;flex:0 0 auto}.msgbubble{background:#142b45;border-radius:16px;padding:10px 12px;line-height:1.6}.msgbubble small{color:var(--muted);display:block;margin-top:3px}.terminal{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;background:#050b10;border-radius:20px;padding:20px;color:#59ee73;border:1px solid rgba(89,238,115,.25);line-height:1.9;white-space:pre-wrap;box-shadow:inset 0 0 0 1px rgba(0,0,0,.4)}
+.clues{margin-top:18px;border:1px solid var(--line);border-radius:22px;background:rgba(8,23,38,.6);padding:18px}.clues h4{margin:0 0 12px;color:var(--muted);font-weight:800}.clue-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.clue-card{border:1px solid rgba(255,255,255,.09);background:#122740;border-radius:17px;padding:14px;display:flex;gap:12px;align-items:flex-start;min-height:76px;transition:.15s}.clue-card:hover{transform:translateY(-1px);border-color:rgba(245,181,50,.45)}.clue-card .ico{width:36px;height:36px;border-radius:12px;display:grid;place-items:center;background:rgba(130,207,255,.1);border:1px solid rgba(130,207,255,.22)}.clue-card b{display:block}.clue-card span{display:block;color:var(--muted);font-size:13px;margin-top:3px}.tag{margin-left:auto;background:rgba(49,209,124,.12);border:1px solid rgba(49,209,124,.4);color:#73ffb4;border-radius:999px;padding:3px 8px;font-size:11px;font-weight:900}.tag.old{background:rgba(130,207,255,.08);border-color:rgba(130,207,255,.25);color:#a7dfff}.choicebox{display:grid;gap:10px;margin-top:16px}.choice{border:1px solid var(--line);background:#122740;color:var(--text);border-radius:16px;padding:14px 15px;text-align:left;line-height:1.55}.choice:hover{border-color:var(--gold);background:#182d3f}.choice.selected{border-color:var(--gold);box-shadow:0 0 0 3px rgba(245,181,50,.12)}.mini-result{margin-top:12px;border-left:4px solid var(--blue);background:rgba(130,207,255,.08);border-radius:15px;padding:13px 15px;color:#d8e9fa;line-height:1.65}.statbar{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}.stat{border:1px solid var(--line);background:#0d2034;border-radius:16px;padding:12px}.stat small{display:block;color:var(--muted)}.stat b{font-size:19px}.qcard{border:1px solid rgba(245,181,50,.42);background:rgba(16,34,55,.95);border-radius:24px;padding:24px}.qnum{color:var(--gold2);font-size:13px;font-weight:900;letter-spacing:.05em}.quote{background:rgba(255,255,255,.035);border-left:3px solid var(--gold);border-radius:14px;padding:16px 17px;margin:14px 0;line-height:1.85;white-space:pre-line}.question{font-size:18px;font-weight:900;margin:16px 0 10px}.options{display:grid;gap:10px}.option{border:1px solid var(--line);border-radius:15px;background:#132840;color:var(--text);padding:14px;text-align:left;display:flex;gap:10px;align-items:flex-start}.option:hover{border-color:var(--gold)}.num{display:inline-grid;place-items:center;width:25px;height:25px;border-radius:99px;background:#274563;color:#d8eaff;font-size:13px;flex:0 0 auto}.feedback{margin-top:14px;border-radius:16px;padding:14px 15px;line-height:1.65}.feedback.good{border:1px solid rgba(49,209,124,.45);background:rgba(49,209,124,.12)}.feedback.bad{border:1px solid rgba(255,95,101,.45);background:rgba(255,95,101,.11)} .match-wrap{display:grid;gap:16px}.chips{display:flex;gap:10px;flex-wrap:wrap;min-height:50px}.chip{border:1px solid rgba(245,181,50,.5);background:rgba(245,181,50,.12);color:var(--gold2);border-radius:999px;padding:10px 13px;font-weight:900;user-select:none}.chip[draggable="true"]{cursor:grab}.chip.dragging{opacity:.55;transform:scale(.98)}.chip.used{opacity:.46;border-style:dashed}.chip.selected{background:var(--gold);color:#102033}.targets{display:grid;gap:10px}.target{border:1px dashed var(--line2);border-radius:17px;padding:13px;min-height:76px;background:rgba(8,23,38,.55);display:grid;grid-template-columns:1fr minmax(150px,auto);gap:10px;align-items:center;text-align:left;color:var(--text);transition:.15s}.target:hover{border-color:rgba(245,181,50,.55);background:rgba(16,38,61,.75)}.target.drag-over{border-style:solid;border-color:var(--gold);box-shadow:0 0 0 3px rgba(245,181,50,.12)}.target b{display:block}.target span{color:var(--muted);font-size:13px}.dropval{color:var(--muted);font-style:italic;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);border-radius:999px;padding:8px 11px;text-align:center}.target.filled{border-style:solid;border-color:rgba(245,181,50,.55)}.target.filled .dropval{color:#102033;background:var(--gold);font-weight:900;font-style:normal}.answer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.select-card{border:1px solid var(--line);background:#11263d;border-radius:18px;padding:14px}.select-card h4{margin:0 0 10px;color:var(--gold2)}.select-card label{display:block;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);border-radius:13px;padding:10px;margin-top:8px;cursor:pointer}.select-card input{margin-right:8px}.ending{border:1px solid rgba(245,181,50,.45);background:linear-gradient(145deg,#132740,#071522);border-radius:28px;padding:30px;box-shadow:var(--shadow)}.ending h2{font-size:34px;margin:0 0 10px}.ending .grade{display:inline-block;border-radius:999px;padding:7px 12px;background:rgba(245,181,50,.14);border:1px solid rgba(245,181,50,.4);color:var(--gold2);font-weight:900;margin-bottom:14px}.book{margin-top:20px}.idiom-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-height:430px;overflow:auto;padding-right:5px}.idiom{border:1px solid rgba(255,255,255,.08);background:#0d2034;border-radius:15px;padding:12px}.idiom b{color:var(--gold2)}.idiom span{color:#b7c6d7;display:block;margin-top:4px;font-size:13px;line-height:1.55}.modal{position:fixed;inset:0;background:rgba(0,0,0,.58);display:grid;place-items:center;z-index:50;padding:20px}.modal-card{width:min(680px,100%);background:#0f2238;border:1px solid rgba(245,181,50,.42);border-radius:24px;box-shadow:var(--shadow);padding:22px}.modal-card h3{margin:0 0 12px}.modal-card dl{display:grid;gap:12px}.modal-card dt{color:var(--gold2);font-weight:900}.modal-card dd{margin:3px 0 0;color:#dce9f8;line-height:1.65}.modal-actions{display:flex;justify-content:flex-end;margin-top:18px}.float-note{position:fixed;right:18px;bottom:18px;background:#102740;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:18px;padding:14px 15px;max-width:330px;color:#d8e9fa;z-index:40;line-height:1.55}.toast{animation:pop .25s ease}@keyframes pop{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:none}}
+@media(max-width:760px){.hero-grid,.answer-grid,.clue-grid,.statbar{grid-template-columns:1fr}.badges{grid-template-columns:1fr}.bubble{max-width:100%}.wrap{width:min(100% - 24px,940px)}.hero-card{padding:24px}.idiom-grid{grid-template-columns:1fr}.topinner{gap:10px}.pill{font-size:12px;padding:6px 9px}}
+</style>
+</head>
+<body>
+<div class="topbar hide" id="topbar">
+  <div class="topinner">
+    <div class="brand">🕵️ 관용표현 추리 사건</div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end">
+      <span class="pill">탐정 <strong id="navName">-</strong></span>
+      <span class="pill timer" id="timer">⏱ 18:00</span>
+      <button class="btn ghost small" onclick="openNotebook()">수첩</button>
+    </div>
+  </div>
+</div>
+
+<main id="app"></main>
+
+<div class="modal hide" id="modal" onclick="if(event.target.id==='modal')closeModal()">
+  <div class="modal-card">
+    <h3 id="modalTitle">단서</h3>
+    <div id="modalBody"></div>
+    <div class="modal-actions"><button class="btn small" onclick="closeModal()">확인</button></div>
+  </div>
+</div>
+<div id="float" class="float-note hide"></div>
+
+<script>
+const idioms = [
+ ['눈이 번쩍 뜨이다','정신이 갑자기 들다.'],['발 없는 말이 천리 간다','말은 순식간에 멀리 퍼지므로 말을 삼가야 한다.'],['낮말은 새가 듣고 밤말은 쥐가 듣는다','비밀은 결국 새어 나갈 수 있으니 늘 말조심해야 한다.'],['세 살 버릇 여든까지 간다','어릴 때 몸에 밴 버릇은 쉽게 고쳐지지 않는다.'],['손발이 맞다','함께 일할 때 의견이나 방법이 서로 잘 맞다.'],['발이 넓다','아는 사람이 많거나 교제 관계가 넓다.'],['눈이 동그래지다','놀라거나 의아해 눈을 크게 뜨다.'],['말꼬리를 물고 늘어지다','말의 한두 마디를 빌미 삼아 꼬치꼬치 따지다.'],['쇠뿔도 단김에 빼라','하려고 생각했으면 망설이지 말고 곧 행동하라.'],['김이 식다','재미나 의욕이 없어지다.'],['간 떨어지다','순간적으로 몹시 놀라다.'],['손이 크다','씀씀이가 후하고 크다.'],['손꼽아 기다리다','기대하며 날짜를 꼽아 기다리다.'],['천하를 얻은 듯','매우 기쁘고 만족스러운 모습.'],['눈 깜짝할 사이','매우 짧은 동안.'],['금이 가다','서로의 사이나 친분이 벌어지거나 틀어지다.'],['막을 열다','어떤 행사나 일이 시작되다.'],['간이 크다','겁이 없고 매우 대담하다.'],['귀가 얇다','남의 말을 쉽게 믿다.'],['눈에 띄다','두드러지게 드러나다.'],['물 쓰듯 쓰다','돈이나 물건을 매우 헤프게 쓰다.'],['애간장이 타다','몹시 안타깝고 초조하다.'],['하루에도 열두 번','어떤 일이 매우 빈번히 일어나다.'],['어금니를 악물다','고통이나 분노를 참으며 굳은 의지를 나타내다.'],['하나만 알고 둘은 모른다','한 측면만 보고 두루 보지 못하다.'],['가는 말이 고와야 오는 말이 곱다','남에게 좋게 말하고 행동해야 좋은 반응이 돌아온다.'],['공든 탑이 무너지랴','정성을 다한 일은 쉽게 헛되지 않는다.'],['머리를 맞대다','함께 의논하다.'],['발 벗고 나서다','적극적으로 나서다.'],['손발을 맞추다','서로 잘 협조하다.'],['백지장도 맞들면 낫다','쉬운 일도 함께 하면 더 쉽다.'],['천리 길도 한 걸음부터','큰일도 작은 시작에서 비롯된다.'],['말 한마디에 천 냥 빚도 갚는다','말을 잘하면 어려운 일도 해결할 수 있다.'],['벼는 익을수록 고개를 숙인다','교양 있는 사람일수록 겸손하다.'],['눈을 돌리다','관심을 돌리다.'],['눈을 붙이다','잠을 자다.'],['눈이 높다','수준 높은 것만 보고 여간한 것은 시시하게 여기다.'],['눈이 멀다','마음을 빼앗겨 이성을 잃다.'],['눈에 거슬리다','보기에 불쾌하다.'],['눈도 깜짝 안 한다','조금도 놀라지 않고 태연하다.'],['눈코 뜰 새 없다','정신을 차릴 수 없이 몹시 바쁘다.'],['눈에 불을 켜다','탐을 내어 눈을 빛내다.'],['눈에 차다','마음에 흡족하다.'],['입을 모으다','여러 사람이 모두 한결같이 말하다.'],['입을 막다','남이 말을 못 하게 하다.'],['입만 아프다','아무리 말해도 보람이 없다.'],['입맛대로 하다','마음 내키는 대로 하다.'],['입이 무겁다','말수가 적거나 아는 이야기를 함부로 옮기지 않다.'],['입이 짧다','음식을 적게 먹거나 가려 먹다.'],['입을 맞추다','서로의 의견이 같도록 미리 조정하다.'],['이를 갈다','분해서 독한 마음을 먹고 벼르다.'],['코가 높다','잘난 체하고 뽐내다.'],['코를 납작하게 만들다','기를 죽이다.'],['코 묻은 돈','어린아이가 가진 적은 돈.'],['코가 꿰이다','약점이 잡히다.'],['코끝이 찡하다','몹시 감동하거나 슬퍼하다.'],['누구 코에 붙이겠는가','나누어 주기에 너무 적다.'],['귀가 아프다','너무 여러 번 들어 듣기 싫다.'],['귀에 익다','자주 들어 친숙하다.'],['귀를 세우다','듣기 위해 신경을 곤두세우다.'],['귀를 기울이다','적극적인 관심을 가지고 듣다.'],['귀청 떨어지다','소리가 몹시 크다.'],['손에 익다','일이 손에 익숙해지다.'],['손을 거치다','다른 사람의 노력이나 소유를 거치다.'],['손을 끊다','교제나 거래 관계를 중단하다.'],['손을 뻗치다','활동 범위를 넓히거나 도움·간섭을 미치게 하다.'],['손바닥으로 하늘 가리기','숨기려 해도 소용없다.'],['발을 구르다','안타까워하거나 다급해하다.'],['발을 끊다','왕래를 중단하거나 관계를 끊다.'],['발을 빼다','관계를 끊고 물러나다.'],['발바닥에 불이 나다','부리나케 여기저기 돌아다니다.'],['다리를 뻗고 자다','걱정 없이 마음 편하게 자다.'],['팔을 걷어붙이다','무슨 일에 적극적으로 나서다.'],['간이 부었다','겁 없이 분수 이상의 말이나 행동을 하다.'],['간이 배 밖으로 나오다','무서워하지 않고 대들다.'],['간이 콩알만 해지다','몹시 두려워지거나 무서워지다.'],['간이 서늘하다','위험하거나 두려운 일을 당해 섬뜩하다.'],['간에 기별도 안 가다','먹은 것이 양에 차지 않다.'],['배가 등가죽에 붙었다','몹시 허기지다.'],['머리를 쥐어짜다','몹시 애써 궁리하다.'],['머리를 식히다','긴장을 풀고 마음을 편안하게 하다.'],['목에 힘을 주다','거만하게 굴다.'],['목이 빠지다','몹시 애타게 기다리다.'],['얼굴이 뜨겁다','남 보기 부끄럽다.'],['얼굴이 두껍다','부끄러움을 모르고 염치가 없다.'],['어안이 벙벙하다','뜻밖의 일에 어리둥절하다.'],['미역국 먹다','시험에 떨어지다.'],['꼬리를 내리다','주장이나 기세를 꺾고 순응하다.'],['꼬리에 꼬리를 물다','계속 이어지다.'],['꼬리가 길다','못된 짓을 오래 계속하거나 문을 닫지 않고 드나들다.'],['선심을 쓰다','남에게 착한 마음을 베풀다.'],['마음을 먹다','무엇을 하려고 작정하다.'],['마른침을 삼키다','몹시 긴장하거나 초조해하다.'],['맥이 풀리다','기운이나 긴장이 풀어지다.'],['시치미를 떼다','알고도 모르는 체하거나 하고도 안 한 체하다.'],['게 눈 감추듯','음식을 무척 빨리 먹다.'],['숨을 죽이다','숨소리도 들리지 않게 조용히 하다.'],['숨을 돌리다','가쁜 숨을 가라앉히거나 잠시 휴식하다.'],['달밤에 체조','격에 맞지 않는 짓을 하다.'],['뜸을 들이다','충분히 무르익게 하다.'],['불난 집에 부채질한다','어려운 상황을 더 어렵거나 화나게 만들다.'],['고춧가루 뿌리다','훼방을 놓다.'],['깨가 쏟아지다','오붓하고 아기자기하여 재미가 나다.'],['동에 번쩍 서에 번쩍하다','이곳저곳에 종적을 알 수 없이 나타나다.'],['마음은 굴뚝같다','하고 싶은 마음이 매우 절실하다.'],['물로 보다','하찮게 보거나 쉽게 생각하다.'],['물에 빠진 생쥐','물에 흠뻑 젖어 초췌한 모습.'],['물을 끼얹은 듯','어수선하다가 갑자기 조용해지다.'],['삼천포로 빠지다','엉뚱한 방향으로 진행되다.'],['얼굴에 먹칠을 하다','체면이나 명예를 더럽히다.'],['바가지를 긁다','불평이나 잔소리를 늘어놓다.'],['바가지를 쓰다','억울하게 손해를 보다.'],['까마귀 날자 배 떨어진다','우연히 동시에 생긴 일로 의심받다.'],['찬물을 끼얹다','잘되어 가는 일의 분위기를 흐리다.'],['진땀을 빼다','어려운 일로 몹시 애를 쓰다.'],['엎드려 절 받기','상대가 생각도 않는데 스스로 요구해 대접을 받다.'],['국물도 없다','돌아오는 몫이나 이득이 없다.'],['구렁이 담 넘어가듯','분명하게 처리하지 않고 슬그머니 얼버무리다.'],['하나를 보고 열을 안다','일부를 보고 전체를 미루어 알다.'],['입이 가볍다','비밀이나 말을 쉽게 옮긴다. ※ 보충 표현']
+];
+
+const TOTAL_STEPS = 16;
+const state = {
+  name:'', badge:'🔎', difficulty:'easy', screen:'home', step:0, time:18*60, timer:null,
+  deduction:0, empathy:0, rumor:0, clues:0, answered:0, wrong:0,
+  choices:{}, found:{}, notes:[], selectedChip:null, matches:{}, final:{},
+  questionDecks:{}, questionExplain:{}, answeredIds:{}
+};
+const app = document.getElementById('app');
+function el(id){return document.getElementById(id)}
+function html(strings,...vals){return strings.map((s,i)=>s+(vals[i]??'')).join('')}
+function progress(){
+  return `<div class="progress">${Array.from({length:TOTAL_STEPS},(_,i)=>`<span class="dot ${i<state.step?'on':i===state.step?'now':''}"></span>`).join('')}</div>`
+}
+function topTitle(eyebrow,title){return `<div class="headerline"><div><div class="eyebrow">${eyebrow}</div><div class="title">${title}</div></div><button class="btn ghost small" onclick="openNotebook()">수첩 열기</button></div>${progress()}`}
+function renderHome(){
+  document.body.scrollTop=document.documentElement.scrollTop=0; el('topbar')?.classList.add('hide');
+  app.innerHTML = html`
+  <section class="hero"><div class="hero-card"><div class="hero-content">
+    <span class="label">🟡 CASE 06-A · 사라진 축제 영상</span>
+    <h1>전교 방송 18분 전,<br>USB가 사라졌다</h1>
+    <p>복도는 조용했지만, 단톡방은 이미 술렁이고 있었다.<br>
+    누군가는 장난이라고 했고, 누군가는 실수라고 했다. 그리고 한 명은 끝까지 입을 다물었다.</p>
+    <div class="hero-grid">
+      <div class="dossier">
+        <h3>📁 사건 파일</h3>
+        <div class="file-list">
+          <div class="file-item"><div class="file-ico">🎬</div><div><b>축제_최종편집본.mp4 → USB 분실</b><span>내일 오전 발표 예정 · 백업 파일 없음</span></div></div>
+          <div class="file-item"><div class="file-ico">💬</div><div><b>6-2 방송편집팀_오늘.txt</b><span>사건 당일 단톡방 기록 · 일부 삭제됨</span></div></div>
+          <div class="file-item"><div class="file-ico">📹</div><div><b>CCTV_복도_B구역_14시28분</b><span>방송실 근처에서 두 명의 움직임 포착</span></div></div>
+          <div class="file-item"><div class="file-ico">✂️</div><div><b>찢어진 메모 조각</b><span>아직 발견 위치 미확인 · 누가 썼는지 알 수 없음</span></div></div>
+        </div>
+      </div>
+      <div class="dossier profile">
+        <h3>🕵️ 탐정 등록</h3>
+        <p style="color:var(--muted);line-height:1.7;margin-top:0">수첩에 남을 탐정 닉네임과 배지를 정하세요. 선택은 엔딩 기록에 표시됩니다.</p>
+        <input id="nick" maxlength="12" placeholder="예: 단서왕 피클" oninput="state.name=this.value.trim()" />
+        <div class="badges">
+          ${['🔎|관찰형','🧠|추론형','🕯️|침착형'].map((b,i)=>{let [e,t]=b.split('|');return `<button class="badge-card ${i===0?'selected':''}" onclick="selectBadge(this,'${e}')"><span class="emoji">${e}</span><b>${t}</b></button>`}).join('')}
+        </div>
+        <h3 style="font-size:16px;margin:16px 0 0">🎚️ 난이도</h3>
+        <div class="mode-grid">
+          <button class="mode-card selected" onclick="selectMode(this,'easy')"><b>입문 탐정</b><span>연결 문제에 작은 힌트 표시 · 시간 여유 있음</span></button>
+          <button class="mode-card" onclick="selectMode(this,'hard')"><b>진짜 탐정</b><span>힌트 없이 단서만 보고 추리 · 시간이 더 빠듯함</span></button>
+        </div>
+        <div class="notice" style="margin-top:16px"><b>교실 방송 스피커가 울렸다.</b><br>“전교 발표까지 남은 시간 안에 파일을 찾아야 합니다. 소문보다 단서를 믿으세요.”</div>
+        <button class="btn" style="width:100%;margin-top:18px" onclick="startGame()">사건 수첩 열기 ▶</button>
+      </div>
+    </div>
+  </div></div></section>`;
+}
+function selectBadge(btn,badge){document.querySelectorAll('.badge-card').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');state.badge=badge}
+function selectMode(btn,mode){document.querySelectorAll('.mode-card').forEach(x=>x.classList.remove('selected'));btn.classList.add('selected');state.difficulty=mode}
+function startGame(){
+  state.name = (el('nick')?.value||'익명 탐정').trim()||'익명 탐정';
+  state.time = state.difficulty==='easy' ? 20*60 : 16*60;
+  el('navName').textContent = `${state.badge} ${state.name}`; el('topbar').classList.remove('hide');
+  updateTimer();
+  if(!state.timer){state.timer=setInterval(tick,1000)}
+  goScene(1);
+}
+function tick(){
+  if(state.screen==='home'||state.screen==='end') return;
+  state.time--; updateTimer(); if(state.time<=0){state.time=0; renderEnding('time')}
+}
+function updateTimer(){
+  const m=Math.floor(state.time/60), s=String(state.time%60).padStart(2,'0'); const t=el('timer'); if(t){t.textContent=`⏱ ${m}:${s}`; t.classList.toggle('danger',state.time<240)}
+}
+function addNote(title,text){state.notes.push({title,text}); toast(`수첩에 기록됨: ${title}`)}
+function toast(msg){const f=el('float');f.innerHTML=msg;f.classList.remove('hide');f.classList.add('toast');setTimeout(()=>{f.classList.add('hide');f.classList.remove('toast')},2400)}
+function openNotebook(){
+  const clues = Object.keys(state.found).length ? Object.values(state.found).map(c=>`<div class="idiom"><b>${c.title}</b><span>${c.short}</span></div>`).join('') : '<p style="color:var(--muted)">아직 기록된 단서가 없습니다.</p>';
+  const notes = state.notes.length ? state.notes.slice(-8).map(n=>`<div class="idiom"><b>${n.title}</b><span>${n.text}</span></div>`).join('') : '<p style="color:var(--muted)">아직 분석 기록이 없습니다.</p>';
+  showModal('탐정 수첩', `<div class="statbar"><div class="stat"><small>추리력</small><b>${state.deduction}</b></div><div class="stat"><small>공감도</small><b>${state.empathy}</b></div><div class="stat"><small>소문 위험</small><b>${state.rumor}</b></div><div class="stat"><small>확보 단서</small><b>${Object.keys(state.found).length}</b></div></div><h4>확보한 단서</h4><div class="idiom-grid">${clues}</div><h4 style="margin-top:18px">분석 기록</h4><div class="idiom-grid">${notes}</div>`)
+}
+function showModal(title,body){el('modalTitle').innerHTML=title;el('modalBody').innerHTML=body;el('modal').classList.remove('hide')}
+function closeModal(){el('modal').classList.add('hide')}
+function clueCard(c){
+  const seen=state.found[c.id];
+  return `<button class="clue-card" onclick='openClue(${JSON.stringify(c).replaceAll("'","&#39;")})'><div class="ico">${c.ico||'🔍'}</div><div><b>${c.title}</b><span>${c.short}</span></div><span class="tag ${seen?'old':''}">${seen?'확인':'NEW'}</span></button>`
+}
+function openClue(c){
+  if(!state.found[c.id]){state.clues++; state.found[c.id]=c;}
+  showModal(c.title, `<dl><div><dt>원래 알고 있던 것</dt><dd>${c.before}</dd></div><div><dt>조사 후 새롭게 보인 점</dt><dd>${c.after}</dd></div><div><dt>수첩 메모</dt><dd>${c.memo}</dd></div></dl>`)
+}
+function next(btn){state.step++; render(btn)}
+function goScene(n){state.screen='scene'+n; state.step=n-1; render()}
+function render(){
+  document.body.scrollTop=document.documentElement.scrollTop=0; updateTimer();
+  const key=state.screen;
+  if(key==='scene1') return scene1(); if(key==='q1') return q1(); if(key==='scene2') return scene2(); if(key==='match1') return match1();
+  if(key==='scene3') return scene3(); if(key==='q2') return q2(); if(key==='scene4') return scene4(); if(key==='q3') return q3();
+  if(key==='scene5') return scene5(); if(key==='q4') return q4(); if(key==='scene6') return scene6(); if(key==='q5') return q5();
+  if(key==='final') return finalDeduction(); if(key==='book') return idiomBook();
+}
+function screenShell(eyebrow,title,body){app.innerHTML=`<div class="wrap screen">${topTitle(eyebrow,title)}${body}</div>`}
+
+function scene1(){state.step=1; screenShell('사건 당일 오후 2시 12분 — 방송실 앞','첫 번째 현장: 비어 있는 USB 케이스', `
+  <div class="panel gold"><h3 class="section-title">📁 사건 개요</h3><div class="story">축제 영상은 6학년 2반이 한 달 동안 만든 발표 자료였다. 발표까지 남은 시간은 18분.
+
+방송실 책상 위에는 <strong>빈 USB 케이스</strong>와 편집표만 남아 있었다. 담임 선생님은 학생들을 다그치지 않았다. 대신 조용히 말했다.
+
+<em>“누가 그랬는지보다, 왜 그런 일이 생겼는지를 먼저 보자.”</em></div>
+  <div class="dialogue">
+    <div class="bubble"><span class="speaker">담임</span>방금 전까지만 해도 여기 있었어. 그런데 케이스만 남았구나.</div>
+    <div class="bubble right"><span class="speaker">준호</span>저는 그냥 복도 지나갔어요. 방송실 안쪽은 제대로 안 봤는데요?</div>
+    <div class="bubble"><span class="speaker">동민</span>편집은 끝났어요. 그런데... 다시 확인할 시간이 없었어요.</div>
+    <div class="bubble right"><span class="speaker">소연</span>저는 지금은 말 안 할래요. 제가 말하면 일이 더 커질 것 같아요.</div>
+  </div></div>
+  <div class="clues"><h4>단서 항목 · 눌러서 수첩에 기록하기</h4><div class="clue-grid">
+    ${clueCard({id:'case',ico:'🎬',title:'빈 USB 케이스',short:'책상 위에 남은 케이스와 편집표',before:'USB에는 축제 최종 영상이 담겨 있었고, 발표 직전까지 방송실 책상에 있었다.',after:'케이스는 열려 있었지만 책상 위 물건은 크게 흐트러지지 않았다. 누군가 급히 뒤진 흔적보다는 조심히 꺼낸 느낌이 강하다.',memo:'물건이 사라졌다고 해서 바로 도둑을 정할 수는 없다. 목적이 장난인지, 실수인지, 보호인지 구분해야 한다.'})}
+    ${clueCard({id:'students',ico:'👥',title:'세 명의 학생',short:'준호·소연·동민의 반응이 서로 다름',before:'준호는 말이 앞서는 편, 소연은 소식을 빨리 전하는 편, 동민은 영상 편집을 맡았다.',after:'오늘은 세 사람 모두 평소와 조금 다르다. 준호는 말끝을 흐리고, 소연은 침묵하고, 동민은 시계를 자꾸 본다.',memo:'평소 성격과 오늘 행동의 차이가 관용표현 추리의 핵심이 될 수 있다.'})}
+    ${clueCard({id:'deadline',ico:'⏰',title:'전교 방송 시간',short:'발표까지 시간이 많지 않음',before:'영상은 내일이 아니라 오늘 방과 후 예고 방송에서 먼저 공개될 예정이었다.',after:'선생님이 “발표가 늦어지는 것보다 친구가 다치는 게 더 문제”라고 말한 점이 눈에 띈다.',memo:'단순 분실 사건이 아니라 영상 내용 자체와 관련이 있을 수 있다.'})}
+    ${clueCard({id:'room',ico:'🧹',title:'방송실 책상 아래',short:'아주 작은 종이 끝이 보임',before:'처음에는 아무도 책상 아래를 자세히 보지 않았다.',after:'책상 다리 안쪽에 찢긴 종이 모서리처럼 보이는 것이 끼어 있다. 글자는 아직 읽을 수 없다.',memo:'지금 당장 결론을 내리기보다, 나중에 현장을 다시 확인해야 한다.'})}
+  </div></div>
+  <div class="panel"><h3 class="section-title">🔦 첫 조사 방향</h3><div class="story">탐정은 처음 한 번만 조사 방향을 정했다. 이후에는 단서가 이어지는 대로 움직인다.</div><div class="choicebox">
+    <button class="choice" onclick="chooseFirst('careful')"><b>책상 아래와 케이스 안쪽까지 천천히 본다</b></button>
+    <button class="choice" onclick="chooseFirst('fast')"><b>학생들의 말을 먼저 확인한다</b></button>
+  </div><div id="firstResult"></div></div>
+`)}
+function chooseFirst(type){
+  if(state.choices.firstLocked){toast('이미 첫 조사 방향을 정했습니다. 다음 장으로 넘어가세요.');return}
+  state.choices.first=type; state.choices.firstLocked=true;
+  let text='';
+  if(type==='careful'){
+    state.deduction+=2;state.time-=40;addNote('조사 방식','작은 물건부터 확인하기로 했다. 시간이 줄었지만 관찰 기록이 늘었다.');
+    text='책상 아래의 종이 모서리를 표시해 두었다. 지금은 읽을 수 없지만, 나중에 다시 확인할 만하다.';
+  }else{
+    state.empathy+=1;addNote('조사 방식','학생들의 반응을 먼저 듣기로 했다. 분위기는 부드러워졌지만 현장 확인은 뒤로 밀렸다.');
+    text='세 학생의 목소리를 먼저 들었다. 소연이는 계속 망설였고, 동민은 시계를 확인했다.';
+  }
+  el('firstResult').innerHTML=`<div class="mini-result">${text}</div><button class="btn" style="width:100%;margin-top:12px" onclick="state.screen='q1';render()">단서 분석으로 →</button>`;
+  updateTimer();
+}
+
+function qTemplate(q){
+  state.questionExplain[q.id]=q.explain;
+  if(!state.questionDecks[q.id]){
+    const original=q.options.map((text,i)=>({text, correct:i===q.answer}));
+    let deck=shuffled(original);
+    // 우연히 원래 순서 그대로 나오면 한 칸 돌려서 '정답 1번 고정'처럼 보이지 않게 한다.
+    if(deck.length>1 && deck.every((item,i)=>item.text===original[i].text)) deck.push(deck.shift());
+    state.questionDecks[q.id]=deck;
+  }
+  const opts=state.questionDecks[q.id].map((o,i)=>`<button class="option" onclick="answerQ('${q.id}',${o.correct?'true':'false'},'${q.next}')"><span class="num">${i+1}</span><span>${o.text}</span></button>`).join('')
+  screenShell(q.eyebrow,q.title,`<div class="qcard"><div class="qnum">관용표현 추리</div><div class="quote">${q.quote}</div><div class="question">${q.question}</div><div class="options">${opts}</div><div id="fb"></div></div>`)
+}
+function answerQ(id,isCorrect,nextScreen){
+  if(state.answeredIds[id]) return; state.answeredIds[id]=true; state.answered++;
+  const explain=state.questionExplain[id]||'';
+  const good=!!isCorrect; if(good){state.deduction+=2; state.empathy+= id==='q1'?1:0; addNote('정답 분석',explain)} else {state.wrong++; state.time-=45; state.rumor+=1; addNote('오답 기록',`다시 생각할 부분: ${explain}`)}
+  el('fb').innerHTML=`<div class="feedback ${good?'good':'bad'}"><b>${good?'✔ 정확합니다.':'✖ 다시 수첩에 기록합니다.'}</b><br>${explain}</div><button class="btn" style="width:100%;margin-top:12px" onclick="state.screen='${nextScreen}'; render()">다음으로 →</button>`;
+}
+function q1(){state.step=2; qTemplate({id:'q1',eyebrow:'단서 분석 #1',title:'평소와 오늘의 차이',quote:'소연이는 평소 작은 소식도 친구들에게 금방 전하는 편이었다. 그래서 친구들은 “소연이는 입이 가볍다”고 농담하곤 했다. 그런데 오늘은 “제가 말하면 일이 더 커질 것 같아요.”라고만 말하고, 질문이 이어져도 입을 다물었다.',question:'오늘 소연이의 달라진 행동을 가장 잘 나타내는 관용표현은?',options:['귀가 얇다','입이 무겁다','입맛대로 하다','눈에 불을 켜다'],answer:1,explain:'“입이 무겁다”는 아는 이야기를 함부로 옮기지 않는다는 뜻입니다. 평소에는 말이 빨랐지만, 오늘은 일부러 말을 아끼고 있습니다.',next:'scene2'})}
+
+function scene2(){state.step=3; screenShell('오후 2시 16분 — 6-2 방송편집팀 단톡방','단톡방 기록: 너무 빨리 퍼진 말', `
+  <div class="chatbox"><div class="chathead"><b>📱 6-2 방송편집팀_오늘.txt</b><span>14:03~14:17</span></div><div class="messages">
+    ${msg('준호','아까 복도에서 누가 방송실 쪽으로 가는 거 봤는데?', '14:03')}
+    ${msg('소연','이름 말하지 마. 아직 확실한 거 아니야.', '14:05')}
+    ${msg('하린','벌써 다른 반 애들도 USB 없어졌다고 알고 있던데?', '14:06')}
+    ${msg('동민','제발 추측으로 말하지 말자. 발표 전까지 내가 확인해 볼게.', '14:08')}
+    ${msg('준호','그럼 난 빠질래. 괜히 말 꺼냈다가 나만 이상해지잖아.', '14:11')}
+  </div></div>
+  <div class="clues"><h4>단서 항목</h4><div class="clue-grid">
+    ${clueCard({id:'chat1',ico:'💬',title:'빠르게 번진 소문',short:'다른 반까지 USB 이야기를 알고 있음',before:'처음 사라진 것을 안 사람은 방송편집팀 안에 몇 명뿐이었다.',after:'몇 분 사이 다른 반 학생도 알고 있었다. 누군가 일부러 퍼뜨렸다고 단정할 수는 없지만, 말이 예상보다 빨리 움직였다.',memo:'소문 자체와 소문을 옮긴 사람은 구분해야 한다.'})}
+    ${clueCard({id:'chat2',ico:'🤐',title:'소연이의 제지',short:'확실하지 않은 이름을 말하지 말라고 함',before:'소연이는 평소 여러 소식을 친구들에게 빨리 전하는 편이었다.',after:'이번에는 오히려 말을 멈추게 하려 했다. 누군가를 감싸는 것일 수도, 친구가 다치는 것을 막으려는 것일 수도 있다.',memo:'침묵이 항상 숨김은 아니다. 이유를 확인해야 한다.'})}
+    ${clueCard({id:'chat3',ico:'🧢',title:'준호의 물러남',short:'처음엔 말하다가 뒤로 빠짐',before:'준호는 “봤다”고 말했지만, 누구인지 확실히 말하지 않았다.',after:'이름을 묻자 “난 빠질래”라고 했다. 거짓말일 수도 있지만, 괜히 엮이는 것이 싫어서 물러난 것일 수도 있다.',memo:'말을 시작한 사람을 곧바로 범인으로 몰면 추리가 삼천포로 빠질 수 있다.'})}
+    ${clueCard({id:'chat4',ico:'🕒',title:'동민의 확인 약속',short:'발표 전까지 확인하겠다고 함',before:'동민은 편집 담당이라 최종 파일 상태를 가장 잘 안다.',after:'그가 “내가 확인해 볼게”라고 했지만 어디서 무엇을 확인하겠다는 말인지는 남기지 않았다.',memo:'책임감인지, 시간을 벌려는 것인지 아직 모른다.'})}
+  </div></div>
+  <div class="btn-row"><button class="btn" onclick="state.screen='match1';render()">단톡방 표현 분석 →</button></div>
+`)}
+function msg(name,text,time){return `<div class="msg"><div class="avatar">${name[0]}</div><div class="msgbubble"><b>${name}</b> ${text}<small>${time}</small></div></div>`}
+
+function shuffled(arr){
+  const a=[...arr];
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+  return a;
+}
+function match1(){
+  state.step=4;
+  state.matches = {};
+  state.selectedChip = null;
+  const chips = shuffled(['발 없는 말이 천리 간다','발을 빼다','입이 무겁다','삼천포로 빠지다']);
+  const targets = shuffled([
+    {id:'rumor', text:'처음엔 몇 명만 알던 이야기가 쉬는 시간 사이 여러 교실로 번졌다.', hint:'말이 이동한 속도를 보세요.'},
+    {id:'junho', text:'준호는 먼저 말을 꺼냈지만, 이름을 묻자 “난 이제 모르는 일이야.”라며 뒤로 물러섰다.', hint:'관계를 끊고 빠지는 행동입니다.'},
+    {id:'soyeon', text:'소연이는 무언가 본 듯했지만, 확실하지 않은 이름을 친구들에게 옮기지 않았다.', hint:'말을 옮기지 않는 태도입니다.'},
+    {id:'wrongway', text:'탐정이 한 사람만 몰아세우자, USB보다 소문 싸움이 더 커질 뻔했다.', hint:'추리의 방향이 빗나가는 상황입니다.'}
+  ]);
+  screenShell('관용표현 증거 연결','사건 속 표현 맞추기', `
+ <div class="panel gold"><h3 class="section-title">🧩 관용표현 카드 연결</h3><div class="story" style="font-size:15px;color:var(--muted)">관용표현 카드를 아래 상황에 <strong>끌어다 놓으세요.</strong> 태블릿이나 터치 기기에서는 카드를 한 번 누른 뒤 놓을 칸을 누르면 됩니다.${state.difficulty==='easy'?' 입문 탐정 모드에서는 상황 아래에 작은 힌트가 보입니다.':' 진짜 탐정 모드에서는 힌트 없이 사건 문장만 보고 연결합니다.'}</div></div>
+ <div class="panel"><div class="match-wrap">
+  <div class="chips" id="chips">${chips.map(x=>chipButton(x)).join('')}</div>
+  <div class="targets">${targets.map(t=>target(t.id,t.text,t.hint)).join('')}</div>
+  <div id="matchfb"></div><button class="btn" onclick="checkMatch1()">연결 확인 →</button>
+ </div></div>`)
+}
+function chipButton(x){return `<button class="chip" draggable="true" ondragstart="dragChip(event,'${x}')" ondragend="dragEnd(event)" onclick="selectChip('${x}')">${x}</button>`}
+function target(id,text,hint){
+  const hintHtml = state.difficulty==='easy' ? `<span>${hint}</span>` : '';
+  return `<button class="target" onclick="placeChip('${id}')" ondragover="allowDrop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)" ondrop="dropChip(event,'${id}')"><div><b>${text}</b>${hintHtml}</div><div class="dropval" id="drop-${id}">여기에 놓기</div></button>`
+}
+function dragChip(ev,x){state.draggingChip=x; state.selectedChip=x; ev.dataTransfer.setData('text/plain',x); ev.currentTarget.classList.add('dragging')}
+function dragEnd(ev){ev.currentTarget.classList.remove('dragging'); document.querySelectorAll('.target').forEach(t=>t.classList.remove('drag-over'))}
+function allowDrop(ev){ev.preventDefault()}
+function dragEnter(ev){ev.preventDefault(); ev.currentTarget.classList.add('drag-over')}
+function dragLeave(ev){ev.currentTarget.classList.remove('drag-over')}
+function dropChip(ev,id){ev.preventDefault(); ev.currentTarget.classList.remove('drag-over'); const x=ev.dataTransfer.getData('text/plain') || state.draggingChip; assignChip(id,x)}
+function selectChip(x){state.selectedChip=x; document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('selected',c.textContent===x))}
+function placeChip(id){if(!state.selectedChip){toast('먼저 관용표현 카드를 선택하거나 끌어오세요.');return} assignChip(id,state.selectedChip)}
+function assignChip(id,x){
+  if(!x) return;
+  Object.keys(state.matches).forEach(k=>{ if(state.matches[k]===x){ state.matches[k]=null; const old=el('drop-'+k); if(old){old.textContent='여기에 놓기'; old.closest('.target').classList.remove('filled')} } });
+  state.matches[id]=x;
+  const drop=el('drop-'+id);
+  if(drop){drop.textContent=x; drop.closest('.target').classList.add('filled')}
+  document.querySelectorAll('.chip').forEach(c=>c.classList.toggle('used', Object.values(state.matches).includes(c.textContent)));
+}
+function checkMatch1(){
+  const ans={rumor:'발 없는 말이 천리 간다',junho:'발을 빼다',soyeon:'입이 무겁다',wrongway:'삼천포로 빠지다'};
+  const allFilled=Object.keys(ans).every(k=>state.matches[k]);
+  if(!allFilled){toast('아직 연결하지 않은 칸이 있어요.');return}
+  let ok=Object.keys(ans).every(k=>state.matches[k]===ans[k]);
+  if(ok){
+    state.deduction+=4;
+    addNote('단톡방 연결','소문이 퍼지는 현상, 뒤로 물러나는 행동, 말을 아끼는 태도, 추리가 엉뚱해지는 흐름을 구분했다.');
+  }else{
+    state.time-= state.difficulty==='easy' ? 45 : 70;state.wrong++;state.rumor+=1;
+    addNote('단톡방 연결 보완','겉으로 비슷해 보여도 “소문이 퍼지는 일”과 “말을 옮기지 않는 태도”는 다르다. 다음 단서에서 다시 확인해야 한다.');
+  }
+  el('matchfb').innerHTML=`<div class="feedback ${ok?'good':'bad'}"><b>${ok?'✔ 연결 성공':'✖ 일부 연결이 어긋났습니다'}</b><br>${ok?'상황을 보고 표현을 자연스럽게 연결했습니다.':'정답을 바로 공개하지 않습니다. 수첩의 단톡방 단서를 다시 떠올리며 다음 장에서 확인하세요.'}</div><button class="btn" style="width:100%;margin-top:12px" onclick="state.screen='scene3';render()">CCTV 확인 →</button>`
+}
+
+function scene3(){state.step=5; screenShell('오후 2시 28분 — 복도 B구역','CCTV 기록: 화면이 말하지 않는 것', `
+ <div class="terminal">CAM-03 방송실 복도
+
+[14:28:03] 인물 A — 방송실 방향 접근
+[14:28:17] 인물 A — 복도 좌우 확인, 잠시 멈춤
+[14:28:29] 인물 A — 방송실 문 앞에서 몸을 낮춤
+[14:28:41] 인물 A — 방송실 안쪽으로 들어감
+[14:28:52] 인물 A — 가방에 무언가 넣고 빠르게 이동
+[14:29:10] 인물 B — 계단 쪽에서 나타남
+[14:29:18] 인물 A·B — 서로 반대 방향으로 이동</div>
+ <div class="clues"><h4>CCTV 분석 단서</h4><div class="clue-grid">
+  ${clueCard({id:'cctvA',ico:'📹',title:'인물 A의 움직임',short:'몸을 낮추고 방송실 문 앞에서 멈춤',before:'화면만으로는 얼굴이 또렷하지 않다. 키와 옷 색만 대략 보인다.',after:'인물 A는 문을 열기 전 복도를 살폈다. 하지만 뛰어들거나 물건을 뒤지는 모습은 보이지 않는다.',memo:'수상한 움직임은 단서지만, 그것만으로 범인을 확정할 수 없다.'})}
+  ${clueCard({id:'cctvBag',ico:'🎒',title:'가방 속 물건',short:'작은 물건을 넣은 듯 보임',before:'USB도 작은 물건이므로 화면만 보면 의심스럽다.',after:'가방에 넣은 물건의 크기는 USB보다 조금 커 보인다. 케이스, 공책, 삼각대 부품일 가능성도 있다.',memo:'한 장면만 보고 전체를 판단하면 위험하다.'})}
+  ${clueCard({id:'cctvB',ico:'👣',title:'인물 B의 반대 이동',short:'계단 쪽에서 나타나 반대로 감',before:'인물 B는 방송실 안으로 들어가는 모습이 없다.',after:'다만 계단 쪽에는 도서관과 국어자료실이 있다. USB가 방송실 밖으로 옮겨졌다면 이 경로도 확인해야 한다.',memo:'장소 단서가 넓어졌다. 방송실만 볼 일이 아니다.'})}
+  ${clueCard({id:'announcement',ico:'📢',title:'학교 방송 멘트',short:'“교무실로 오세요”가 중간에 끊김',before:'방송 중간에 선생님 호출 멘트가 나왔다.',after:'동민이 그 시각 교무실 근처에 있었다는 말이 있지만, 직접 확인한 사람은 없다.',memo:'말로 들은 정보와 화면으로 본 정보를 구분하자.'})}
+ </div></div>
+ <div class="btn-row"><button class="btn" onclick="state.screen='q2';render()">CCTV 단서 분석 →</button></div>`)}
+function q2(){state.step=6; qTemplate({id:'q2',eyebrow:'단서 분석 #2',title:'화면 하나만 보고 판단할 수 있을까?',quote:'CCTV에는 인물 A가 가방에 무언가를 넣는 장면이 보였다. 그러나 물건의 정체는 확실하지 않았다. 게다가 인물 B가 계단 쪽으로 움직인 기록도 남아 있어, 방송실 장면 하나만으로는 전체 흐름이 설명되지 않았다.',question:'탐정이 CCTV 한 장면만 보고 바로 결론을 내린다면, 그 태도에 가장 가까운 관용표현은?',options:['까마귀 날자 배 떨어진다','손바닥으로 하늘 가리기','하나만 알고 둘은 모른다','하나를 보고 열을 안다'],answer:2,explain:'“하나만 알고 둘은 모른다”는 한 측면만 보고 전체를 보지 못한다는 뜻입니다. CCTV 한 장면만으로 범인을 정하면 안 된다는 점을 묻습니다.',next:'scene4'})}
+
+function scene4(){state.step=7; screenShell('오후 2시 32분 — 도서관 앞 복도','소연이의 침묵: 말하지 않는 이유', `
+ <div class="panel gold"><h3 class="section-title">🤫 복도에서 만난 소연</h3><div class="story">소연이는 도서관 앞에서 휴대폰을 꼭 쥐고 있었다. 화면에는 보내다 만 문장이 남아 있었다.
+
+<em>“그 장면, 그냥 틀면 안 돼. 먼저 고쳐야 해.”</em>
+
+소연이는 탐정을 보자마자 휴대폰을 뒤집었다.</div>
+ <div class="dialogue">
+  <div class="bubble"><span class="speaker">탐정 ${state.badge}</span>네가 본 게 있으면 말해 줘. 누굴 혼내려는 게 아니야.</div>
+  <div class="bubble right"><span class="speaker">소연</span>내가 말하면 반 전체가 다 알게 될 것 같아. 이번엔 그러고 싶지 않아.</div>
+  <div class="bubble"><span class="speaker">탐정 ${state.badge}</span>그럼 사람 이름 말고, 일이 왜 이렇게 됐는지만 말해 줄래?</div>
+  <div class="bubble right"><span class="speaker">소연</span>영상 안에 누군가 창피해할 장면이 있었어. 그걸 먼저 없애야 했어.</div>
+ </div></div>
+ <div class="panel"><h3 class="section-title">🧭 한 번의 대응 선택</h3><div class="story" style="font-size:15px;color:var(--muted)">이번 선택은 엔딩에 크게 영향을 줍니다. 이후에는 선택보다 스토리와 분석이 중심입니다.</div><div class="choicebox">
+  <button class="choice" onclick="chooseSoyeon('public')"><b>친구들이 있는 곳에서 바로 묻는다</b></button>
+  <button class="choice" onclick="chooseSoyeon('private')"><b>조용한 곳에서 이유만 천천히 듣는다</b></button>
+  <button class="choice" onclick="chooseSoyeon('skip')"><b>지금은 묻지 않고 기록만 남긴다</b></button>
+ </div><div id="soyeonResult"></div></div>
+ <div class="clues"><h4>대화 후 남은 단서</h4><div class="clue-grid">
+  ${clueCard({id:'soyeonPhone',ico:'📱',title:'보내다 만 문장',short:'“그 장면, 그냥 틀면 안 돼.”',before:'소연이가 누군가에게 메시지를 보내려다 멈췄다.',after:'문장에는 범인 이름보다 영상 내용에 대한 걱정이 먼저 나온다. USB를 숨긴 이유가 누군가를 곤란하게 만들려는 것만은 아닐 수 있다.',memo:'소연이의 침묵은 단순한 숨김보다 보호에 가까워 보인다.'})}
+  ${clueCard({id:'embarrass',ico:'🫣',title:'창피한 장면',short:'최종 영상 안에 문제가 되는 장면이 있었음',before:'축제 영상은 즐거운 장면을 모은 발표 자료라고 알려져 있었다.',after:'편집 실수로 누군가 창피해할 장면이 남아 있었을 가능성이 생겼다.',memo:'동기는 “장난”이 아니라 “방송을 막아야 한다”일 수 있다.'})}
+ </div></div>
+ <div class="btn-row"><button class="btn" onclick="state.screen='q3';render()">소연이의 말 분석 →</button></div>`)}
+function chooseSoyeon(type){state.choices.soyeon=type; const r=el('soyeonResult'); if(type==='public'){state.rumor+=3;state.time+=20;addNote('대응 선택','공개적으로 물었다. 시간은 아꼈지만 주변 학생들이 웅성거렸다.');r.innerHTML='<div class="mini-result">복도 분위기가 술렁였다. 소연이는 더 짧게 대답했고, 다른 학생들이 추측을 시작했다.</div>'} if(type==='private'){state.empathy+=4;state.time-=50;state.deduction+=1;addNote('대응 선택','조용히 들었다. 소연이는 사람 이름 대신 영상 속 문제 장면에 대해 말해 주었다.');r.innerHTML='<div class="mini-result">소연이가 “사람 이름은 말하지 않을게. 대신 왜 막으려 했는지는 말할 수 있어.”라고 말했다.</div>'} if(type==='skip'){state.empathy+=1;state.time-=10;addNote('대응 선택','지금은 묻지 않고 기록했다. 갈등은 피했지만 중요한 감정 단서는 약해졌다.');r.innerHTML='<div class="mini-result">소연이는 고맙다는 듯 고개를 끄덕였지만 더 말하지는 않았다.</div>'}}
+function q3(){state.step=8; qTemplate({id:'q3',eyebrow:'단서 분석 #3',title:'말이 커지지 않게 막기',quote:'소연이는 “내가 이름을 말하면 그 말이 다른 반까지 갈 거야. 그러면 영상보다 소문이 더 큰 일이 돼.”라고 말했다. 실제로 USB 이야기는 몇 분 만에 옆 반까지 퍼져 있었다.',question:'소연이가 걱정한 상황을 가장 자연스럽게 나타내는 관용표현은?',options:['발을 구르다','발 없는 말이 천리 간다','입을 맞추다','귀를 기울이다'],answer:1,explain:'“발 없는 말이 천리 간다”는 말이 순식간에 멀리 퍼지는 상황을 뜻합니다. 여기서는 소문이 빠르게 번지는 장면과 연결됩니다.',next:'scene5'})}
+
+function scene5(){state.step=9; const careful=state.choices.first==='careful'; const extra=careful?'<div class="bubble"><span class="speaker">탐정</span>처음 봤던 책상 아래 종이 끝, 아직 그대로 있어.</div>':'<div class="bubble"><span class="speaker">탐정</span>아까 급히 지나친 책상 아래를 다시 봐야겠어.</div>'; screenShell('오후 2시 38분 — 편집실 재조사','찢어진 메모는 여기서 나온다', `
+ <div class="panel gold"><h3 class="section-title">✂️ 책상 아래, 쓰레기통, 그리고 국어사전</h3><div class="story">탐정은 방송실로 돌아왔다. 책상 위는 그대로였지만, 책상 아래에는 종이 조각이 더 보였다.
+
+조각은 두 군데에서 나왔다. 하나는 책상 다리 안쪽, 다른 하나는 쓰레기통 안쪽 벽면에 붙어 있었다. 두 조각을 맞추자 짧은 문장이 이어졌다.</div>
+ <div class="dialogue">
+  ${extra}
+  <div class="bubble right"><span class="speaker">동민</span>그건... 그냥 연습장 찢은 거예요.</div>
+  <div class="bubble"><span class="speaker">탐정</span>연습장이라기엔 같은 모양으로 찢어졌어. 그리고 글씨가 두 조각에 걸쳐 있어.</div>
+  <div class="bubble right"><span class="speaker">동민</span>진짜 별거 아니에요. 발표 늦어지면 다 제 탓이잖아요.</div>
+ </div>
+ <div class="quote">메모 조각을 맞춘 결과
+
+“사전 뒤. 먼저 고쳐. 말 커지기 전에.”
+
+아래에는 흐릿한 글씨로 “D”처럼 보이는 표시가 남아 있었다.</div></div>
+ <div class="clues"><h4>새로 발견한 단서</h4><div class="clue-grid">
+  ${clueCard({id:'memoFound',ico:'✂️',title:'찢어진 메모 조각',short:'책상 아래와 쓰레기통에서 나온 두 조각',before:'첫 조사에서는 종이 끝만 보였고, 정확한 내용은 알 수 없었다.',after:'두 조각을 맞추자 “사전 뒤. 먼저 고쳐. 말 커지기 전에.”라는 문장이 나왔다.',memo:'메모는 갑자기 나온 것이 아니라, 방송실 책상 아래에서 시작해 쓰레기통 조사로 이어졌다.'})}
+  ${clueCard({id:'dictionary',ico:'📚',title:'국어사전 단서',short:'“사전 뒤”라는 장소 암시',before:'계단 쪽에는 도서관과 국어자료실이 있다.',after:'CCTV의 인물 B 이동 방향과 메모의 “사전 뒤”가 연결된다. 방송실이 아니라 자료실 쪽을 확인해야 할 수 있다.',memo:'장소 추리가 좁혀졌다.'})}
+  ${clueCard({id:'dongminTalk',ico:'😓',title:'동민의 반응',short:'별거 아니라고 말하지만 손이 떨림',before:'동민은 계속 발표 시간을 신경 쓰고 있었다.',after:'메모 이야기가 나오자 “다 제 탓”이라는 말을 했다. 물건을 숨긴 사람이라기보다 실수를 감추려는 사람처럼 보인다.',memo:'시치미를 떼는지, 겁이 나서 얼버무리는지 살펴야 한다.'})}
+  ${clueCard({id:'markD',ico:'🖊️',title:'흐릿한 D 표시',short:'메모 아래쪽에 남은 표시',before:'누가 쓴 메모인지 알 수 없었다.',after:'D는 동민의 영문 이름 첫 글자일 수도 있지만, 단정할 수는 없다. 다른 의미일 가능성도 남아 있다.',memo:'정황 증거는 방향을 알려 주지만, 마지막 확인이 필요하다.'})}
+ </div></div>
+ <div class="btn-row"><button class="btn" onclick="state.screen='q4';render()">메모 속 표현 분석 →</button></div>`)}
+function q4(){state.step=10; qTemplate({id:'q4',eyebrow:'단서 분석 #4',title:'모르는 척하는 말',quote:'메모 조각이 나오자 동민은 “그건 그냥 연습장”이라고 말했다. 하지만 조각을 맞추자 “사전 뒤. 먼저 고쳐.”라는 문장이 나타났다. 동민은 잠깐 마른침을 삼키더니 “별거 아니에요.”라며 시선을 피했다.',question:'동민이 알고도 모르는 체하는 태도에 가장 가까운 관용표현은?',options:['마른침을 삼키다','시치미를 떼다','코끝이 찡하다','물로 보다'],answer:1,explain:'“시치미를 떼다”는 알고도 모르는 체하거나 하고도 하지 않은 체한다는 뜻입니다. “마른침을 삼키다”는 긴장한 모습에는 어울리지만, 모르는 척하는 태도 자체를 나타내지는 않습니다.',next:'scene6'})}
+
+function scene6(){state.step=11; screenShell('오후 2시 43분 — 국어자료실','사전 뒤에서 나온 것', `
+ <div class="panel gold"><h3 class="section-title">📚 국어자료실의 낡은 사전</h3><div class="story">국어자료실 맨 아래 칸에는 오래된 사전들이 줄지어 있었다. 가장 두꺼운 사전 뒤쪽에서 흰 봉투 하나가 나왔다.
+
+봉투 안에는 USB와 작은 쪽지가 들어 있었다.</div>
+ <div class="quote">쪽지
+
+“미안해. 마지막 장면을 확인하다가 수아가 넘어지는 장면이 그대로 들어간 걸 봤어.
+그냥 틀면 다 웃을 것 같았어. 선생님께 말하려고 했는데, 겁이 났어.
+먼저 고치고 돌려놓으려고 했어.”</div>
+ <div class="dialogue">
+  <div class="bubble"><span class="speaker">동민</span>훔치려던 건 아니었어요. 발표 망치고 싶지도 않았어요.</div>
+  <div class="bubble right"><span class="speaker">소연</span>내가 봤을 때 바로 말했으면 또 누가 누구 때문이라고 소문났을 거야.</div>
+  <div class="bubble"><span class="speaker">준호</span>난 그냥 들은 말로 떠든 거였어. 미안.</div>
+  <div class="bubble right"><span class="speaker">담임</span>이제 남은 건 어떻게 말하느냐야. 말 한마디가 사람을 살릴 수도 있어.</div>
+ </div></div>
+ <div class="clues"><h4>마지막 단서</h4><div class="clue-grid">
+  ${clueCard({id:'usbFound',ico:'💾',title:'국어사전 뒤 USB',short:'흰 봉투 안에서 발견',before:'USB는 방송실에 있어야 했지만 보이지 않았다.',after:'국어자료실의 낡은 사전 뒤에서 발견됐다. 메모의 장소 암시와 CCTV의 이동 방향이 맞물린다.',memo:'위치는 확인됐다. 이제 누가, 왜 숨겼는지 정리해야 한다.'})}
+  ${clueCard({id:'motive',ico:'🎞️',title:'영상 속 실수 장면',short:'수아가 넘어지는 장면이 남아 있었음',before:'영상은 축제 발표용 최종본이라고 알려져 있었다.',after:'동민은 창피한 장면을 보고 방송을 잠시 막으려 했다. 방법은 잘못됐지만 목적은 조롱이 아니었다.',memo:'범행 동기보다 해결 방식이 중요해졌다.'})}
+  ${clueCard({id:'words',ico:'🗣️',title:'말하는 방식',short:'공개 추궁보다 조용한 설명이 필요함',before:'단톡방에서는 추측이 이미 빠르게 퍼졌다.',after:'진실을 말하더라도 친구 이름을 함부로 드러내면 또 다른 상처가 생길 수 있다.',memo:'엔딩은 정답뿐 아니라 말하는 방식에도 달려 있다.'})}
+  ${clueCard({id:'team',ico:'🤝',title:'다시 맞춘 손발',short:'수정·확인·방송 역할을 나눌 수 있음',before:'세 학생은 서로를 의심하며 움직였다.',after:'동민은 편집 수정, 소연은 소문 차단, 준호는 장비 운반을 맡으면 발표를 살릴 수 있다.',memo:'사건의 마무리는 벌주기가 아니라 회복이 될 수도 있다.'})}
+ </div></div>
+ <div class="panel"><h3 class="section-title">📣 마지막 공개 방식</h3><div class="choicebox">
+  <button class="choice" onclick="chooseReveal('accuse')"><b>모두 앞에서 동민이 숨겼다고 말한다</b></button>
+  <button class="choice" onclick="chooseReveal('teacher')"><b>선생님께 먼저 설명하고, 필요한 말만 반에 알린다</b></button>
+  <button class="choice" onclick="chooseReveal('team')"><b>세 학생과 먼저 머리를 맞대고 해결 순서를 정한다</b></button>
+ </div><div id="revealResult"></div></div>
+ <div class="btn-row"><button class="btn" onclick="proceedAfterReveal()">마지막 표현 정리 →</button></div>`)}
+function proceedAfterReveal(){if(!state.choices.reveal){toast('공개 방식을 먼저 정하세요.');return} state.screen='q5'; render()}
+function chooseReveal(type){
+  if(state.choices.revealLocked){toast('이미 공개 방식을 정했습니다. 다음 장으로 넘어가세요.');return}
+  state.choices.reveal=type; state.choices.revealLocked=true; const r=el('revealResult');
+  if(type==='accuse'){
+    state.rumor+=3;state.deduction+=1;addNote('공개 방식','복도에서 바로 말하자 주변 학생들이 수아 이름을 추측하기 시작했다.');
+    r.innerHTML='<div class="mini-result">복도 쪽에서 웅성거림이 번졌다. 몇몇 학생이 수아의 이름을 조심스럽게 입에 올리기 시작했다.</div>'
+  }
+  if(type==='teacher'){
+    state.empathy+=2;state.deduction+=2;state.time-=35;addNote('공개 방식','선생님께 먼저 설명했다. 사실 확인과 친구 보호를 함께 준비했다.');
+    r.innerHTML='<div class="mini-result">선생님은 낮은 목소리로 “필요한 사실만 말하자”고 했다.</div>'
+  }
+  if(type==='team'){
+    state.empathy+=3;state.deduction+=2;state.time-=50;addNote('공개 방식','세 학생과 머리를 맞댔다. 동민은 직접 사과하고, 소연은 소문을 막고, 준호는 장비를 챙기기로 했다.');
+    r.innerHTML='<div class="mini-result">세 사람은 잠깐 말없이 서 있다가, 각자 해야 할 일을 하나씩 맡았다.</div>'
+  }
+  updateTimer();
+}
+function q5(){state.step=12; qTemplate({id:'q5',eyebrow:'단서 분석 #5',title:'사건을 마무리하는 말',quote:'USB는 국어사전 뒤에서 발견됐다. 동민은 영상을 고치고, 소연은 더 이상 소문이 퍼지지 않게 친구들에게 조용히 설명하기로 했다. 준호는 방송 장비를 챙기며 “이번엔 서로 역할을 맞춰 보자”고 했다.',question:'세 사람이 각자 맡은 일을 맞춰 가며 협조하는 모습에 가장 알맞은 관용표현은?',options:['손발을 맞추다','물을 끼얹은 듯','국물도 없다','얼굴에 먹칠을 하다'],answer:0,explain:'“손발을 맞추다”는 어떤 일을 할 때 서로 잘 협조한다는 뜻입니다. 여기서는 편집, 소문 차단, 장비 준비를 나누어 해결하는 모습과 연결됩니다.',next:'final'})}
+
+function finalDeduction(){state.step=13; screenShell('최종 추리','진실을 정리하세요', `
+ <div class="panel gold"><h3 class="section-title">⚖️ 탐정의 마지막 선택</h3><div class="story">수첩에는 충분한 단서가 모였다. 이제 사건의 핵심을 세 가지로 정리해야 한다.
+
+누가 USB를 숨겼는가? 왜 숨겼는가? 어디에 숨겼는가?</div>
+ <div class="statbar"><div class="stat"><small>추리력</small><b>${state.deduction}</b></div><div class="stat"><small>공감도</small><b>${state.empathy}</b></div><div class="stat"><small>소문 위험</small><b>${state.rumor}</b></div><div class="stat"><small>남은 시간</small><b>${Math.floor(state.time/60)}:${String(state.time%60).padStart(2,'0')}</b></div></div></div>
+ <div class="answer-grid">
+  <div class="select-card"><h4>1. 숨긴 사람</h4>${radio('suspect','준호','준호')}${radio('suspect','소연','소연')}${radio('suspect','동민','동민')}</div>
+  <div class="select-card"><h4>2. 이유</h4>${radio('motive','장난으로 친구들을 놀리려고','장난')}${radio('motive','창피한 장면을 고치고 방송하려고','보호')}${radio('motive','발표를 망치고 싶어서','방해')}</div>
+  <div class="select-card"><h4>3. 숨긴 장소</h4>${radio('place','방송실 쓰레기통 안','쓰레기통')}${radio('place','국어자료실 낡은 사전 뒤','사전')}${radio('place','준호의 가방 안','가방')}</div>
+ </div>
+ <div class="btn-row"><button class="btn" onclick="judgeEnding()">엔딩 확인 ▶</button><button class="btn secondary" onclick="state.screen='book';render()">관용표현 도감 보기</button></div>`)}
+function radio(group,label,val){return `<label><input type="radio" name="${group}" value="${val}" onchange="state.final['${group}']='${val}'">${label}</label>`}
+function judgeEnding(){if(!state.final.suspect||!state.final.motive||!state.final.place){toast('세 가지를 모두 선택해야 합니다.');return} const correct=state.final.suspect==='동민'&&state.final.motive==='보호'&&state.final.place==='사전'; if(!correct){renderEnding('bad');return} if(state.time<=0){renderEnding('time');return} if(state.choices.reveal==='team'&&state.empathy>=7&&state.deduction>=13&&state.rumor<=3){renderEnding('secret');return} if(state.choices.reveal!=='accuse'&&state.empathy>=5&&state.deduction>=11&&state.rumor<=5){renderEnding('true');return} if(state.rumor>=7||state.choices.reveal==='accuse'){renderEnding('rumor');return} renderEnding('good')}
+function renderEnding(type){state.screen='end'; if(state.timer){clearInterval(state.timer);state.timer=null} const data={
+ time:['TIME OVER','방송이 시작되기 전까지 USB를 찾지 못했다. 사건은 선생님에게 넘어갔고, 반에는 여러 추측만 남았다. 다음에는 소문보다 단서를 먼저 확인해야 한다.','BAD'],
+ bad:['BAD ENDING','탐정의 결론은 빗나갔다. 누군가를 빨리 지목하려는 마음 때문에 단서가 서로 어떻게 이어지는지 놓쳤다. “하나만 알고 둘은 모른다”는 말이 수첩 맨 위에 남았다.','다시 도전'],
+ rumor:['RUMOR ENDING','USB는 찾았지만, 공개적으로 몰아붙이는 사이에 수아의 이름이 퍼졌다. 진실을 맞히는 것만으로는 충분하지 않았다. 말은 발이 없어도 멀리 간다.','주의'],
+ good:['GOOD ENDING','USB를 찾고 발표도 지켰다. 동민은 사과했고, 친구들은 영상을 다시 확인했다. 다만 몇몇 의심은 완전히 풀리지 않았다.','성공'],
+ true:['TRUE ENDING','탐정은 동민이 USB를 숨긴 이유와 장소를 정확히 밝혀냈다. 선생님은 필요한 사실만 반에 알렸고, 수아의 이름은 소문이 되지 않았다.','진실'],
+ secret:['SECRET ENDING','세 사람은 먼저 머리를 맞댔다. 동민은 실수를 고치고 사과했고, 소연은 더는 말이 커지지 않게 도왔다. 준호는 장비를 챙기며 발표를 살렸다. 방송이 끝난 뒤, 모두는 다리를 뻗고 잘 수 있었다.','최고']
+ }[type];
+ el('topbar')?.classList.add('hide'); app.innerHTML=`<div class="wrap screen"><div class="ending"><span class="grade">${data[2]}</span><h2>${data[0]}</h2><p class="story">${data[1]}</p><div class="statbar"><div class="stat"><small>탐정</small><b>${state.badge} ${state.name}</b></div><div class="stat"><small>추리력</small><b>${state.deduction}</b></div><div class="stat"><small>공감도</small><b>${state.empathy}</b></div><div class="stat"><small>소문 위험</small><b>${state.rumor}</b></div></div><div class="panel"><h3 class="section-title">📌 이번 사건에서 만난 관용표현</h3><p style="color:var(--muted);line-height:1.7">입이 무겁다, 입이 가볍다, 발 없는 말이 천리 간다, 발을 빼다, 삼천포로 빠지다, 하나만 알고 둘은 모른다, 하나를 보고 열을 안다, 손바닥으로 하늘 가리기, 까마귀 날자 배 떨어진다, 마른침을 삼키다, 시치미를 떼다, 손발을 맞추다, 머리를 맞대다, 말 한마디에 천 냥 빚도 갚는다 등</p></div><div class="btn-row"><button class="btn" onclick="location.reload()">처음부터 다시</button><button class="btn secondary" onclick="state.screen='book';el('topbar').classList.remove('hide');render()">관용표현 도감</button></div></div></div>`}
+function idiomBook(){state.step=14; screenShell('관용표현 도감','121개+보충 표현', `<div class="panel"><h3 class="section-title">📚 관용표현 검색</h3><input id="search" placeholder="표현이나 뜻 검색" style="width:100%;border:1px solid var(--line);background:#0a1b2d;color:var(--text);border-radius:15px;padding:13px" oninput="drawBook(this.value)"><div class="book idiom-grid" id="bookgrid"></div><div class="btn-row"><button class="btn" onclick="state.screen='final';render()">최종 추리로 돌아가기</button></div></div>`); drawBook('')}
+function drawBook(q){const list=idioms.filter(([a,b])=>(a+b).includes(q||'')).map(([a,b])=>`<div class="idiom"><b>${a}</b><span>${b}</span></div>`).join(''); el('bookgrid').innerHTML=list}
+
+renderHome(); updateTimer();
+</script>
+</body>
+</html>
